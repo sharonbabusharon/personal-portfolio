@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fafaf8"/>
+      <stop offset="1" stop-color="#f1f3fb"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0 0l6 3-6 3z" fill="#1e3a8a"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+
+  <text x="80" y="102" font-size="20" fill="#1e3a8a" font-family="'JetBrains Mono', monospace" letter-spacing="3">IOT · 3 BUILDS, ONE STACK</text>
+  <text x="80" y="152" font-size="38" font-weight="700" fill="#17181a">Arduino sensors &#8594; Node + MongoDB &#8594; Svelte</text>
+
+  <!-- Shared pipeline -->
+  <!-- sensor -->
+  <rect x="80" y="230" width="250" height="150" rx="14" fill="#ffffff" stroke="#d5d4cd"/>
+  <rect x="106" y="288" width="46" height="30" rx="6" fill="#17181a"/>
+  <text x="129" y="308" font-size="11" fill="#7fd88f" text-anchor="middle" font-family="'JetBrains Mono', monospace">Arduino</text>
+  <path d="M162 285a22 22 0 0 1 0 34" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+  <path d="M178 277a38 38 0 0 1 0 50" fill="none" stroke="#c3d0f0" stroke-width="2.5"/>
+  <text x="106" y="352" font-size="16" fill="#43454a">Ultrasonic / sensor input</text>
+
+  <!-- backend -->
+  <rect x="390" y="230" width="250" height="150" rx="14" fill="#ffffff" stroke="#d5d4cd"/>
+  <rect x="416" y="266" width="30" height="30" rx="7" fill="#1e3a8a"/>
+  <text x="458" y="288" font-size="19" font-weight="600" fill="#17181a">Node.js API</text>
+  <path d="M432 322c8 11 8 23 0 34-8-11-8-23 0-34z" fill="#1e3a8a"/>
+  <text x="458" y="344" font-size="19" font-weight="600" fill="#17181a">MongoDB</text>
+
+  <!-- frontend -->
+  <rect x="700" y="230" width="250" height="150" rx="14" fill="#1e3a8a"/>
+  <text x="726" y="290" font-size="21" font-weight="600" fill="#ffffff">Svelte</text>
+  <text x="726" y="316" font-size="21" font-weight="600" fill="#ffffff">frontend</text>
+  <text x="726" y="352" font-size="14" fill="#c3d0f0" font-family="'JetBrains Mono', monospace">admin + user views</text>
+
+  <line x1="335" y1="305" x2="382" y2="305" stroke="#1e3a8a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="645" y1="305" x2="692" y2="305" stroke="#1e3a8a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <!-- fan-out lines to the three apps -->
+  <path d="M825 380 V 430 H 250 V 470" fill="none" stroke="#c3d0f0" stroke-width="2"/>
+  <path d="M825 380 V 450" fill="none" stroke="#c3d0f0" stroke-width="2"/>
+  <path d="M825 380 V 430 H 1030 V 470" fill="none" stroke="#c3d0f0" stroke-width="2"/>
+
+  <!-- Three app cards -->
+  <!-- Smart Parking -->
+  <rect x="80" y="470" width="340" height="230" rx="16" fill="#ffffff" stroke="#d5d4cd"/>
+  <text x="106" y="512" font-size="14" fill="#1e3a8a" font-family="'JetBrains Mono', monospace" letter-spacing="2">01</text>
+  <text x="106" y="544" font-size="22" font-weight="600" fill="#17181a">Smart Parking</text>
+  <!-- mini slot grid -->
+  <rect x="106" y="566" width="60" height="42" rx="6" fill="none" stroke="#22a55a" stroke-width="2"/>
+  <rect x="176" y="566" width="60" height="42" rx="6" fill="#1e3a8a"/>
+  <rect x="246" y="566" width="60" height="42" rx="6" fill="none" stroke="#22a55a" stroke-width="2"/>
+  <rect x="316" y="566" width="60" height="42" rx="6" fill="#1e3a8a"/>
+  <text x="106" y="646" font-size="15" fill="#43454a">Live slot availability</text>
+  <text x="106" y="670" font-size="15" fill="#43454a">across many lots</text>
+
+  <!-- Bus Buddy -->
+  <rect x="450" y="470" width="340" height="230" rx="16" fill="#ffffff" stroke="#d5d4cd"/>
+  <text x="476" y="512" font-size="14" fill="#1e3a8a" font-family="'JetBrains Mono', monospace" letter-spacing="2">02</text>
+  <text x="476" y="544" font-size="22" font-weight="600" fill="#17181a">Bus Buddy</text>
+  <!-- bus + route -->
+  <line x1="480" y1="590" x2="740" y2="590" stroke="#c3d0f0" stroke-width="3"/>
+  <circle cx="480" cy="590" r="6" fill="#22a55a"/><circle cx="610" cy="590" r="6" fill="#c3d0f0"/><circle cx="740" cy="590" r="6" fill="#c3d0f0"/>
+  <rect x="556" y="572" width="52" height="34" rx="7" fill="#1e3a8a"/>
+  <rect x="562" y="578" width="14" height="12" rx="2" fill="#8aa0dc"/><rect x="580" y="578" width="14" height="12" rx="2" fill="#8aa0dc"/>
+  <text x="476" y="646" font-size="15" fill="#43454a">Live running status of</text>
+  <text x="476" y="670" font-size="15" fill="#43454a">your current bus</text>
+
+  <!-- Temperature -->
+  <rect x="820" y="470" width="340" height="230" rx="16" fill="#ffffff" stroke="#d5d4cd"/>
+  <text x="846" y="512" font-size="14" fill="#1e3a8a" font-family="'JetBrains Mono', monospace" letter-spacing="2">03</text>
+  <text x="846" y="544" font-size="22" font-weight="600" fill="#17181a">Temperature Monitor</text>
+  <polyline points="846,600 886,576 926,588 966,556 1006,572 1046,540"
+    fill="none" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="846" y1="616" x2="1130" y2="616" stroke="#e6e5e0" stroke-width="2"/>
+  <text x="846" y="654" font-size="15" fill="#43454a">Live graphing &amp;</text>
+  <text x="846" y="678" font-size="15" fill="#43454a">configurable alert thresholds</text>
+</svg>

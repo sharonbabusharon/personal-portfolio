@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f4f1"/>
+      <stop offset="1" stop-color="#eaeefb"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#e0e0da" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="800" fill="url(#g)"/>
+  <rect width="1280" height="800" fill="url(#grid)"/>
+  <circle cx="150" cy="150" r="7" fill="#1e3a8a"/>
+  <text x="150" y="380" font-family="'JetBrains Mono',monospace" font-size="22" fill="#1e3a8a" letter-spacing="3">SCREENSHOT</text>
+  <text x="150" y="440" font-family="Inter,system-ui,sans-serif" font-size="52" font-weight="700" fill="#17181a">Play Console</text>
+  <text x="150" y="490" font-family="Inter,system-ui,sans-serif" font-size="24" fill="#74767c">Add your 1M+ downloads screenshot</text>
+  <text x="150" y="650" font-family="'JetBrains Mono',monospace" font-size="16" fill="#a0a09a">Replace with a real screenshot in /static/shots</text>
+</svg>
