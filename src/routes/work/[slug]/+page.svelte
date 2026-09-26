@@ -52,6 +52,7 @@
 	</header>
 
 	<!-- Cover -->
+	{#if p.image}
 	<div class="wrap">
 		<Reveal>
 			<figure class="cover">
@@ -59,6 +60,8 @@
 			</figure>
 		</Reveal>
 	</div>
+
+	{/if}
 
 	<!-- Body -->
 	<div class="wrap body">

@@ -18,7 +18,7 @@ export const profile = {
 	linkedin: 'https://www.linkedin.com/in/sharon-babu-9669b3245',
 	// Headline proof points shown under the hero.
 	metrics: [
-		{ value: '1M+', label: 'Play Store downloads on a consumer app I helped build' },
+		{ value: '1M+', label: 'Play Store downloads on the Malayalam editor I own and maintain' },
 		{ value: '1,000+', label: 'UAE locations running a payment frontend I built' },
 		{ value: '1,000+', label: 'event sites powered by a platform UI I delivered' },
 		{ value: '40+', label: 'reusable Svelte components across production products' }
@@ -90,37 +90,47 @@ export const projects = [
 		]
 	},
 	{
-		slug: 'malayalam-editor',
-		featured: true,
-		name: 'Malayalam Text & Image Editor',
-		kicker: 'Consumer Android app · 1M+ downloads',
-		summary:
-			'A consumer image and meme editor for Malayalam users that surpassed 1 million Play Store downloads. I built most of the frontend and its editing features.',
-		stack: ['Android', 'Image Editing', 'Custom Fonts', 'Face-Blur'],
-		role: 'Developer — built most of the frontend, shipped editor features including image face-blur, and designed custom Malayalam font packs. Now supporting the relaunch.',
-		status: 'Relaunching · 1M+ downloads (proof: Play Console)',
-		link: null,
-		// image: '/shots/malayalam-cover.svg',
-		image: '/shots/malayalam-cover.png',
-		what:
-			'A consumer Android app for creating memes and editing images with strong Malayalam-language support — hundreds of Malayalam and English fonts, editable templates, clipart, frames, drawing tools, and export to image or GIF. It crossed 1 million downloads on the Google Play Store before being taken down, and is now being relaunched.',
-		challenge:
-			'Consumer image editing on Android means doing real work on-device: applying a face-blur to a photo responsively, rendering complex Malayalam script correctly across many custom fonts, and keeping the editing experience smooth on a wide range of phones — including low-end hardware.',
-		built: [
-			'Most of the app’s frontend and editing UI.',
-			'An image face-blur feature (the same problem I later packaged as a standalone Node.js service).',
-			'Self-designed Malayalam font packs bundled into the editor.',
-			'Ongoing work on the user-facing editing experience for the relaunch.'
-		],
-		outcome:
-			'Surpassed 1,000,000 downloads on the Google Play Store (verifiable via Play Console). Being relaunched after removal.',
-		note: 'Built with a small team (“Team Four Big Brothers”); I was responsible for most of the frontend and the editing features noted above.',
-		gallery: [
-			// { src: '/shots/malayalam-1.svg', caption: 'Play Console — 1M+ downloads (add your screenshot)' },
-			{ src: '/shots/malayalam-1.png', caption: 'Play Console — 1M+ downloads (add your screenshot)' },
-			{ src: '/shots/malayalam-2.jpeg', caption: 'Editor with custom Malayalam fonts' }
-		]
-	},
+  "slug": "malayalam-editor",
+  "featured": true,
+  "name": "Malayalam Text & Image Editor — Android & Web",
+  "kicker": "End-to-end project ownership · Live web application",
+  "summary": "I own the entire Malayalam Text & Image Editor project end to end — product development, system architecture, frontend, backend services, data storage, deployment, and ongoing maintenance.",
+  "stack": [
+    "SvelteKit",
+    "Svelte",
+    "Node.js",
+    "JavaScript",
+    "IndexedDB",
+    "REST APIs",
+    "Android"
+  ],
+  "role": "Project owner and full-stack developer — responsible for the complete Android and web product, from product decisions and system architecture through frontend, backend, data storage, deployment, and maintenance.",
+  "status": "Live · Ongoing development",
+  "link": "https://app.malayalameditor.com/",
+  "image": "/shots/malayalam-cover.png",
+  "what": "A Malayalam-focused design tool spanning Android and the web. The SvelteKit edition brings layered text and image editing, custom fonts, multi-page documents, saved designs, and community content into the browser. It builds on the Android product, which surpassed 1 million Play Store downloads.",
+  "challenge": "The browser and Android clients need to exchange designs without losing text sizing, layer geometry, fonts, or image assets. The web editor also needs predictable state across selection, undo/redo, and page changes, while exported images are produced by a separate rendering service.",
+  "built": [
+    "End-to-end project ownership across product development, system architecture, frontend, backend services, data storage, deployment, and maintenance.",
+    "Layered text and image editing workflows in SvelteKit, with selection controls, alignment snapping, undo/redo, and multi-page design support.",
+    "Malayalam font and text handling, alongside Android-compatible design serialization and design-file import/export.",
+    "Backend media and rendering services, API integration, and browser asset storage using IndexedDB.",
+    "Ongoing feature delivery, deployment, and maintenance across the Android and web product.",
+    "Android editing features, including face blur and self-designed Malayalam font packs."
+  ],
+  "outcome": "I own and maintain the complete project, including the live web application at app.malayalameditor.com. The Android product surpassed 1,000,000 Play Store downloads.",
+  "note": "Images below document the Android product and its download history.",
+  "gallery": [
+    {
+      "src": "/shots/malayalam-1.png",
+      "caption": "Existing Android product — Play Console download history"
+    },
+    {
+      "src": "/shots/malayalam-2.jpeg",
+      "caption": "Existing Android editor with custom Malayalam fonts"
+    }
+  ]
+},
 	{
 		slug: 'iot-systems',
 		featured: true,
@@ -149,6 +159,36 @@ export const projects = [
 	},
 
 	/* -------- Additional work (compact cards on home) -------- */
+	{
+  "slug": "referise-job-portal",
+  "featured": false,
+  "caseStudy": true,
+  "name": "Referise — Job Portal",
+  "kicker": "Full frontend ownership",
+  "summary": "I own and manage the entire frontend of the job portal — application architecture, reusable components, responsive user experience, state management, and frontend feature delivery.",
+  "stack": [
+    "SvelteKit",
+    "Svelte",
+    "JavaScript",
+    "Responsive UI",
+    "Component Architecture"
+  ],
+  "role": "Responsible for the complete job portal frontend, managing its architecture, component system, user workflows, and ongoing implementation across the application.",
+  "status": "In development",
+  "link": null,
+  "links": [],
+  "what": "A job portal bringing together job discovery, candidate profiles, saved opportunities, and identity and administration interfaces. I am responsible for the full frontend as the product develops.",
+  "challenge": "Managing the frontend across the product requires a consistent component architecture, responsive layouts, and predictable application state. Search, filters, saved jobs, and profiles must remain consistent as users navigate between workflows or revisit a search.",
+  "built": [
+    "Ownership of the complete frontend architecture and reusable Svelte component system across the portal.",
+    "Responsive user workflows spanning job discovery, job details, and candidate profiles.",
+    "Keyword and location search, filters for work mode, job type, category, experience level, and salary, plus sorting and pagination.",
+    "URL-based filter state so a search can be revisited or shared.",
+    "Saved jobs and searches, editable profile sections, and browser-local persistence across visits."
+  ],
+  "outcome": "Ongoing development of the job portal, with full frontend responsibility spanning architecture, implementation, and feature delivery.",
+  "gallery": []
+},
 	{
 		slug: 'model-outlook',
 		featured: false,

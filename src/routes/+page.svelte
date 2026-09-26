@@ -22,6 +22,7 @@
 		<p class="lead">{profile.summary}</p>
 		<div class="actions">
 			<a class="btn btn-primary" href="#work">View work</a>
+			<a class="btn btn-ghost" href="/Sharon_Babu_CV.pdf" download>Download CV</a>
 			<a class="btn btn-ghost" href="mailto:{profile.email}">Get in touch</a>
 		</div>
 		<div class="meta mono">
@@ -96,7 +97,7 @@
 	<Reveal>
 		<div class="sec-head">
 			<p class="eyebrow">Additional work</p>
-			<h2>More that shipped.</h2>
+			<h2>More work, shipped and in progress.</h2>
 		</div>
 	</Reveal>
 	<div class="add-grid">
@@ -113,6 +114,9 @@
 							<span class="tag">{t}</span>
 						{/each}
 					</div>
+					{#if p.caseStudy}
+						<div class="add-links"><a class="link-arrow sm" href="/work/{p.slug}/">Read case study →</a></div>
+					{/if}
 					{#if p.links && p.links.length}
 						<div class="add-links">
 							{#each p.links as l}
