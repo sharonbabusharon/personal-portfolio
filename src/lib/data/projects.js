@@ -27,6 +27,52 @@ export const profile = {
 
 export const projects = [
 	{
+  "slug": "malayalam-editor-web",
+  "featured": true,
+  "name": "Malayalam Text & Image Editor — Web App",
+  "kicker": "End-to-end project ownership",
+  "summary": "I own the complete web application end to end — product development, system architecture, frontend, backend services, data storage, deployment, and maintenance.",
+  "stack": [
+    "SvelteKit",
+    "Svelte",
+    "Node.js",
+    "JavaScript",
+    "IndexedDB",
+    "REST APIs"
+  ],
+  "role": "Project owner and full-stack developer — responsible for the complete web application, from product decisions and architecture through implementation, deployment, and maintenance.",
+  "status": "Live · Ongoing development",
+  "link": "https://app.malayalameditor.com/",
+  "what": "A live browser-based Malayalam text and image editor with layered editing, custom fonts, multi-page documents, saved designs, and community content. It exchanges compatible design files with the Android app.",
+  "challenge": "The browser and Android clients need to exchange designs without losing text sizing, layer geometry, fonts, or image assets. The web editor also needs predictable state across selection, undo/redo, and page changes, while exported images are produced by a separate rendering service.",
+  "built": [
+    "End-to-end project ownership across product development, system architecture, frontend, backend services, data storage, deployment, and maintenance.",
+    "Layered text and image editing workflows in SvelteKit, with selection controls, alignment snapping, undo/redo, and multi-page design support.",
+    "Malayalam font and text handling, alongside Android-compatible design serialization and design-file import/export.",
+    "Backend media and rendering services, API integration, and browser asset storage using IndexedDB.",
+    "Ongoing feature delivery, deployment, and maintenance across the web application."
+  ],
+  "outcome": "The web application is live at app.malayalameditor.com. I own its end-to-end development, deployment, and ongoing maintenance.",
+  "gallery": [
+    {
+      "src": "/shots/malayalam-web-home.png",
+      "caption": "Live web application — homepage and design entry points"
+    },
+    {
+      "src": "/shots/malayalam-web-editor.png",
+      "caption": "Live web editor — sample Malayalam text layer and editing controls"
+    }
+  ],
+  "caseStudy": true,
+  "links": [
+    {
+      "label": "Open web app",
+      "url": "https://app.malayalameditor.com/"
+    }
+  ],
+  "image": "/shots/malayalam-web-home.png"
+},
+	{
 		slug: 'usc-erp',
 		featured: true,
 		name: 'USC — Low-Code ERP Platform',
@@ -69,7 +115,7 @@ export const projects = [
 		status: 'Live',
 		link: 'https://www.bigdates.ai/',
 		// image: '/shots/bigdates-cover.svg',
-		image: '/shots/bigdates-cover.png',
+		image: '/shots/bigdates-live.png',
 		what:
 			'BigDates lets non-technical users spin up customised event experiences — invitations, event microsites, and more — powered by dynamic templates, animations, and referral tracking. It also runs a franchise web app where photographers manage and deliver event galleries to clients.',
 		challenge:
@@ -86,48 +132,42 @@ export const projects = [
 		gallery: [
 			// { src: '/shots/bigdates-1.svg', caption: 'Admin portal' },
 			{ src: '/shots/bigdates-1.png', caption: 'Admin portal' },
-			{ src: '/shots/bigdates-2.svg', caption: 'Photographer album upload & delivery' }
+			{ src: '/shots/bigdates-live.png', caption: 'Live BigDates website — invitation creation and preview' }
 		]
 	},
 	{
   "slug": "malayalam-editor",
   "featured": true,
-  "name": "Malayalam Text & Image Editor — Android & Web",
-  "kicker": "End-to-end project ownership · Live web application",
-  "summary": "I own the entire Malayalam Text & Image Editor project end to end — product development, system architecture, frontend, backend services, data storage, deployment, and ongoing maintenance.",
+  "name": "Malayalam Text & Image Editor — Android App",
+  "kicker": "Consumer Android app · 1M+ downloads",
+  "summary": "I own the Malayalam text and image editor for Android, with custom fonts, image-editing tools, and more than 1 million Play Store downloads.",
   "stack": [
-    "SvelteKit",
-    "Svelte",
-    "Node.js",
-    "JavaScript",
-    "IndexedDB",
-    "REST APIs",
-    "Android"
+    "Android",
+    "Image Editing",
+    "Custom Fonts",
+    "Face Blur"
   ],
-  "role": "Project owner and full-stack developer — responsible for the complete Android and web product, from product decisions and system architecture through frontend, backend, data storage, deployment, and maintenance.",
-  "status": "Live · Ongoing development",
-  "link": "https://app.malayalameditor.com/",
-  "image": "/shots/malayalam-cover.png",
-  "what": "A Malayalam-focused design tool spanning Android and the web. The SvelteKit edition brings layered text and image editing, custom fonts, multi-page documents, saved designs, and community content into the browser. It builds on the Android product, which surpassed 1 million Play Store downloads.",
-  "challenge": "The browser and Android clients need to exchange designs without losing text sizing, layer geometry, fonts, or image assets. The web editor also needs predictable state across selection, undo/redo, and page changes, while exported images are produced by a separate rendering service.",
+  "role": "Project owner — responsible for the Android product end to end, including editing features, custom Malayalam fonts, and ongoing development and maintenance.",
+  "status": "Live on Google Play · 1M+ downloads",
+  "link": "https://play.google.com/store/apps/details?id=com.fbb.malayalam_text_pic_editor_meme_troll_font_comment&hl=en",
+  "image": "/shots/malayalam-android-store.png",
+  "what": "A consumer Android app for creating and editing Malayalam text and images, with custom font packs, templates, and image-editing tools. The app surpassed 1 million Play Store downloads.",
+  "challenge": "Deliver responsive editing on Android while preserving Malayalam text rendering across custom fonts and handling image effects on a range of devices.",
   "built": [
-    "End-to-end project ownership across product development, system architecture, frontend, backend services, data storage, deployment, and maintenance.",
-    "Layered text and image editing workflows in SvelteKit, with selection controls, alignment snapping, undo/redo, and multi-page design support.",
-    "Malayalam font and text handling, alongside Android-compatible design serialization and design-file import/export.",
-    "Backend media and rendering services, API integration, and browser asset storage using IndexedDB.",
-    "Ongoing feature delivery, deployment, and maintenance across the Android and web product.",
-    "Android editing features, including face blur and self-designed Malayalam font packs."
+    "End-to-end ownership of the Android project and its ongoing development.",
+    "Android editing workflows and frontend interfaces.",
+    "Face-blur tools and self-designed Malayalam font packs."
   ],
-  "outcome": "I own and maintain the complete project, including the live web application at app.malayalameditor.com. The Android product surpassed 1,000,000 Play Store downloads.",
-  "note": "Images below document the Android product and its download history.",
+  "outcome": "The Android app surpassed 1,000,000 Play Store downloads.",
+  "note": "The Android app is available on Google Play. The web application has its own separate case study.",
   "gallery": [
     {
-      "src": "/shots/malayalam-1.png",
-      "caption": "Existing Android product — Play Console download history"
+      "src": "/shots/malayalam-android-store.png",
+      "caption": "Google Play listing — Android app, screenshots, and 1M+ downloads"
     },
     {
       "src": "/shots/malayalam-2.jpeg",
-      "caption": "Existing Android editor with custom Malayalam fonts"
+      "caption": "Android editor with custom Malayalam fonts"
     }
   ]
 },
@@ -159,7 +199,7 @@ export const projects = [
 	},
 
 	/* -------- Additional work (compact cards on home) -------- */
-	{
+		{
   "slug": "referise-job-portal",
   "featured": false,
   "caseStudy": true,
@@ -191,6 +231,8 @@ export const projects = [
 },
 	{
 		slug: 'model-outlook',
+		image: '/shots/model-outlook-cover.png',
+		imageLink: 'https://www.modeloutlook.com/',
 		featured: false,
 		name: 'Model Outlook — Talent Portfolio Sites',
 		summary:
@@ -199,6 +241,7 @@ export const projects = [
 		role: 'Built the live portfolio sites — frontend, layout, and media handling.',
 		status: 'Several live',
 		links: [
+			{ label: 'Model Outlook', url: 'https://www.modeloutlook.com/' },
 			{ label: 'Athul Suresh K', url: 'https://modeloutlook.com/Athul__Suresh__K' },
 			{ label: 'Rohan Lona', url: 'https://modeloutlook.com/Rohan_Lona' },
 			{ label: 'Heaven Zairah', url: 'https://modeloutlook.com/Heaven_Zairah' },
@@ -207,6 +250,8 @@ export const projects = [
 	},
 	{
 		slug: 'wow-pay',
+		image: '/shots/wow-pay-cover.png',
+		imageLink: 'https://mbmepay.com/services',
 		featured: false,
 		name: 'MBME WOW Pay — Fintech Payment Frontend',
 		summary:
@@ -214,7 +259,7 @@ export const projects = [
 		stack: ['Svelte', 'JavaScript', 'CSS'],
 		role: 'Frontend developer — built most of the transaction-flow UI.',
 		status: 'Live',
-		links: [{ label: 'mbmepay.com', url: 'https://mbmepay.com/' }]
+		links: [{ label: 'mbmepay.com', url: 'https://mbmepay.com/services' }]
 	},
 	{
 		slug: 'mbme-hrms',

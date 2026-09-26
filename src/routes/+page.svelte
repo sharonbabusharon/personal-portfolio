@@ -54,7 +54,7 @@
 	<Reveal>
 		<div class="sec-head">
 			<p class="eyebrow">Selected work</p>
-			<h2>Four projects, in depth.</h2>
+			<h2>Selected projects, in depth.</h2>
 		</div>
 	</Reveal>
 
@@ -104,6 +104,11 @@
 		{#each additional as p, i}
 			<Reveal delay={i * 40}>
 				<div class="add-card">
+					{#if p.image}
+						<a class="add-media" href={p.caseStudy ? `/work/${p.slug}/` : p.imageLink} aria-label="View {p.name}">
+							<img src={p.image} alt="{p.name} interface" loading="lazy" />
+						</a>
+					{/if}
 					<div class="add-top">
 						<h3>{p.name}</h3>
 						<span class="status mono">{p.status}</span>
@@ -354,6 +359,18 @@
 	.add-card:hover {
 		border-color: var(--border-strong);
 		box-shadow: var(--shadow-md);
+	}
+	.add-media {
+		display: block;
+		margin: -24px -24px 20px;
+		border-radius: var(--radius) var(--radius) 0 0;
+		overflow: hidden;
+		border-bottom: 1px solid var(--border);
+	}
+	.add-media img {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
 	.add-top {
 		display: flex;
